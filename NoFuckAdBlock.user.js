@@ -4,7 +4,7 @@
 // @version      1.1
 // @description  Fuck "FuckAdBlock"
 // @author       Siguza
-// @homepage     https://github.com/Siguza/Stash/UserScripts
+// @homepage     https://github.com/Siguza/UserScripts
 // @include      /^https?:\/\/.*/.*$/
 // @grant        none
 // @run-at       document-start

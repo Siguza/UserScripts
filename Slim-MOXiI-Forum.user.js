@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Make forum not 100% of width
 // @author       Siguza
-// @homepage     https://github.com/Siguza/Stash/UserScripts
+// @homepage     https://github.com/Siguza/UserScripts
 // @include      /^https?:\/\/(.*\.)?newosxbook\.com\/forum\/.*$/
 // @grant        none
 // @run-at       document-start

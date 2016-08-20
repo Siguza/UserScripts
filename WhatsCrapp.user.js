@@ -4,7 +4,7 @@
 // @version      1.0.1
 // @description  Ugh.
 // @author       Siguza
-// @homepage     https://github.com/Siguza/Stash/UserScripts
+// @homepage     https://github.com/Siguza/UserScripts
 // @include      /^https?:\/\/web\.whatsapp\.com\/.*$/
 // @grant        none
 // @run-at       document-start

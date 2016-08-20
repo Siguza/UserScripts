@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  Just my own style...
 // @author       Siguza
-// @homepage     https://github.com/Siguza/Stash/UserScripts
+// @homepage     https://github.com/Siguza/UserScripts
 // @include      /^https?:\/\/szs\.looki\.de\/.*$/
 // @grant        none
 // @run-at       document-start

@@ -4,7 +4,7 @@
 // @version      1.0.1
 // @description  Improvements for opensource.apple.com
 // @namespace    siguza.applesource
-// @homepage     https://github.com/Siguza/StackScripts
+// @homepage     https://github.com/Siguza/UserScripts
 // @run-at       document-start
 // @grant        none
 // @include      /^https?:\/\/opensource\.apple\.com\/(source|tarballs)\/[^\/]+\/$/

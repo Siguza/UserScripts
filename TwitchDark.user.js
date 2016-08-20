@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  Full dark style for Twitch
 // @namespace    siguza.twitchdark
-// @homepage     https://github.com/Siguza/Stash/UserScripts
+// @homepage     https://github.com/Siguza/UserScripts
 // @run-at       document-start
 // @grant        none
 // @include      /^https?:\/\/www\.twitch\.tv/.*$/
