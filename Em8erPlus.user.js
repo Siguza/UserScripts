@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Em8erPlus
 // @author       Siguza
-// @version      1.0.0
+// @version      1.0.1
 // @description  Accessibility improvements to the Em8er website
 // @namespace    siguza.em8erplus
 // @homepage     https://github.com/Siguza/UserScripts
@@ -12,7 +12,7 @@
 /*jshint multistr: true */
 
 document.head.appendChild(document.createElement('style')).innerHTML = `
-*
+*:not(.nodeIcon>i)
 {
     font-family: 'Helvetica Neue' !important;
 }
