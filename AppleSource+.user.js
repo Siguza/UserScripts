@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AppleSource+
 // @author       Siguza
-// @version      1.0.1
+// @version      1.0.2
 // @description  Improvements for opensource.apple.com
 // @namespace    siguza.applesource
 // @homepage     https://github.com/Siguza/UserScripts
@@ -10,7 +10,12 @@
 // @include      /^https?:\/\/opensource\.apple\.com\/(source|tarballs)\/[^\/]+\/$/
 // ==/UserScript==
 
-window.addEventListener('DOMContentLoaded', function()
+function ready(fn)
+{
+    void(document.readyState == 'loading' ? window.addEventListener('DOMContentLoaded', fn) : fn());
+}
+
+ready(function()
 {
     function f(a, b)
     {
