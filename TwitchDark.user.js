@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TwitchDark
 // @author       Siguza
-// @version      1.2.0
+// @version      1.3.0
 // @description  Full dark style for Twitch
 // @namespace    siguza.twitchdark
 // @homepage     https://github.com/Siguza/UserScripts
@@ -77,7 +77,7 @@ a:hover, a:focus, a:hover .cn-bar__displayname
     color: #8971c1 !important;
     text-decoration: none !important;
 }
-.items-grid .meta p a:not(:hover), .cn-tabs__item > a:not(:hover), .cn-bar__displayname:not(:hover), .tw-tabs__item>a.active, .tw-tabs__item>button.active
+.items-grid .meta p a:not(:hover), .cn-tabs__item > a:not(:hover), .cn-bar__displayname:not(:hover), .tw-tabs__item>a.active, .tw-tabs__item>button.active, .card__title a:not(:hover)
 {
     color: #6441a4;
 }

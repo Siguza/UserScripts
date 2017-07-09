@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TwitterDark
 // @author       Siguza
-// @version      1.1.0
+// @version      1.2.0
 // @description  Full dark style for Twitter
 // @namespace    siguza.twitterdark
 // @homepage     https://github.com/Siguza/UserScripts
@@ -29,14 +29,14 @@ body.three-col, body.ProfilePage, .follow-button,
 .Trends, .activity-popup-dialog-content .tweet, .modal .modal-tweet, #activity-popup-dialog .modal-header, .NotificationsHeadingContent, .content-inner, .DMButtonBar,
 .module .list-link:not(:hover), .MutedKeywordsFooter, .MutedKeywordsAddItemForm, .find-friends-top-subheader, .find-friends-sources, #notifications-optout-all-top,
 .DMConversation-composer.u-bgUserColorLightest, .SidebarFilterModule, .modal-header, .block-dialog .submit-section, #global-tweet-dialog .modal-tweet .tweet,
-.DirectMessage-tweet .QuoteTweet
+.DirectMessage-tweet .QuoteTweet, .ThreadedConversation-showMoreThreads, .DirectMessage-text
 {
     background: none !important;
 }
 .follow-button, .stream-item:not(.no-header-background-module), .tweet,
 .ProfileHeaderCard, .TwitterCard, .QuoteTweet .tweet-content, .QuoteTweet-text a, .QuoteTweet-text a:hover, .QuoteTweet-text a:focus, .QuoteTweet-text a:active,
-.QuoteTweet-text .pretty-link b,.QuoteTweet-text .pretty-link s, .QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s,
-.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, .QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s,
+.QuoteTweet-text .pretty-link b,.QuoteTweet-text .pretty-link s, .QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, .stats .stat-count a:not(:hover) strong,
+.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, .QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s, .ProfileHeaderCard-bio,
 .ProfileHeaderCard-birthdateText, .ProfileHeaderCard-joinDateText, .ProfileHeaderCard-locationText, .ProfileHeaderCard-onlineHoursText, .ProfileHeaderCard-responsivenessLevelText, .ProfileHeaderCard-vineProfileText,
 .ProfileHeading-toggleItem.is-active, .ProfileHeading-toggleItem.is-active:hover, .ProfileHeading-toggleItem.is-active:focus, .ProfileNav-item.is-active .ProfileNav-value, .ProfileNav-item.is-active:hover .ProfileNav-value,
 .DirectMessage--received .DirectMessage-text, .DirectMessage--sent .DirectMessage-text, .ProfileCard-bio, .hovercard.profile-card .bio-container, .UserActions-editButton, .modal-content, .message .message-text,
@@ -44,7 +44,8 @@ body.three-col, body.ProfilePage, .follow-button,
 {
     color: #CCC !important;
 }
-h2, h3, .wtf-module h3, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTweet-fullname, .ProfileNameTruncated, .DashboardProfileCard-name, .UserActions-editButton:hover, .error-page h1, .module .active .list-link:not(:hover), .DMTypeaheadHeader
+h2, h3, .wtf-module h3, .modal-table th, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTweet-fullname, .ProfileNameTruncated, .DashboardProfileCard-name,
+.UserActions-editButton:hover, .error-page h1, .module .active .list-link:not(:hover), .DMTypeaheadHeader, .WtfLargeCarouselStreamItem-title
 {
     color: #FFF !important;
 }
@@ -56,7 +57,8 @@ h2, h3, .wtf-module h3, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTw
 {
     color: #e81c4f !important;
 }
-.tweet:hover, .new-tweets-bar:hover, .TwitterCard-container--clickable:hover, .ThreadedConversation-showMore:hover, div.DMInboxItem:hover, .module .list-link:hover, .find-friends-list li:hover, .DMTokenizedMultiselectSuggestion.is-highlighted
+.tweet:hover, .new-tweets-bar:hover, .TwitterCard-container--clickable:hover, .ThreadedConversation-showMore:hover, div.DMInboxItem:hover, .module .list-link:hover, .find-friends-list li:hover, .DMTokenizedMultiselectSuggestion.is-highlighted,
+.ActivityItem:not(.highlighted) .QuoteTweet--slim:hover, .ThreadedConversation-showMoreThreads:hover
 {
     background: rgba(255, 255, 255, .05) !important;
 }
@@ -70,16 +72,26 @@ h2, h3, .wtf-module h3, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTw
 {
     border-color: rgba(255, 255, 255, .2) !important;
 }
+.QuoteTweet:hover
+{
+    border-color: rgba(255, 255, 255, .4) !important;
+}
 .ThreadedConversation, .ThreadedConversation-showMore, .ThreadedConversation-showMore:after, .ThreadedConversation+.ThreadedConversation--loneTweet, :not(.ThreadedConversation--ownReply)+.ThreadedConversation--ownReply,
 .ThreadedConversation--ownReply+.ThreadedConversation--loneTweet:not(.ThreadedConversation--ownReply), .ThreadedConversation--loneTweet:first-child, .DMTokenizedMultiselectSuggestion.is-highlighted,
 .permalink .inline-reply-tweetbox, .activity-popup-dialog-users .account, hr, .DMConversation-composer
 {
     border-top-color: rgba(255, 255, 255, .2) !important;
 }
-.DMInboxItem, .DMActivity-header, .DMDivider:before, .ProfileCard-bg, .DashboardProfileCard-bg, .ProfileClusterFollow, .permalink.has-replies .inline-reply-tweetbox, .stream-item-activity-notification,
-.modal-header, .NotificationsHeadingContent, .dropdown-divider, .app, .account, .find-friends-list li, #notifications-optout-all-top, .DMTokenizedMultiselectSuggestion.is-highlighted, .block-dialog .block-section
+.DMInboxItem, .DMActivity-header, .DMDivider:before, .ProfileCard-bg, .DashboardProfileCard-bg, .ProfileClusterFollow, .permalink.has-replies .inline-reply-tweetbox, .stream-item-activity-notification, .ActivityItem,
+.modal-header, .NotificationsHeadingContent, .dropdown-divider, .app, .account, .find-friends-list li, #notifications-optout-all-top, .DMTokenizedMultiselectSuggestion.is-highlighted, .block-dialog .block-section,
+.ThreadedConversation-showMoreThreads
 {
     border-bottom-color: rgba(255, 255, 255, .2) !important;
+}
+.wtf-module .UserSmallListItem
+{
+    border-bottom: none !important;
+    padding-bottom: 0;
 }
 .follow-button, .UserActions-editButton
 {
@@ -93,7 +105,7 @@ h2, h3, .wtf-module h3, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTw
 {
     border-color: #000 !important;
 }
-.ProfileAvatar, .DMConversation-composer
+.ProfileAvatar, .DMConversation-composer, .EdgeButton--primary:focus
 {
     box-shadow: none !important;
 }
@@ -102,6 +114,14 @@ h2, h3, .wtf-module h3, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTw
     border: solid 2px #000 !important;
     padding: 0 !important;
     margin: -44px 3px 1px -2px !important;
+}
+.ThreadedConversation-showMoreThreads
+{
+    margin-top: 0 !important;
+}
+.ThreadedConversation-showMoreThreadsButton:hover
+{
+    text-decoration: none !important;
 }
 .dropdown-menu, .DMPopover-content
 {
@@ -146,6 +166,10 @@ h2, h3, .wtf-module h3, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTw
 .TokenizedMultiselect-inputContainer
 {
     background: #FFF !important;
+}
+.DashUserDropdown.dropdown-menu li>a:not(:hover), .DashUserDropdown.dropdown-menu button:not(:hover)
+{
+    color: inherit !important;
 }
 .spinner, .pushing-state .pushstate-spinner, .TwitterCard [data-poll-user-choice="1"] .PollXChoice-optionContainer .PollXChoice-choice--selected[data-poll-index="1"]
 {
