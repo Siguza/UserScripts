@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TwitterDark
 // @author       Siguza
-// @version      1.2.0
+// @version      1.2.1
 // @description  Full dark style for Twitter
 // @namespace    siguza.twitterdark
 // @homepage     https://github.com/Siguza/UserScripts
@@ -29,7 +29,8 @@ body.three-col, body.ProfilePage, .follow-button,
 .Trends, .activity-popup-dialog-content .tweet, .modal .modal-tweet, #activity-popup-dialog .modal-header, .NotificationsHeadingContent, .content-inner, .DMButtonBar,
 .module .list-link:not(:hover), .MutedKeywordsFooter, .MutedKeywordsAddItemForm, .find-friends-top-subheader, .find-friends-sources, #notifications-optout-all-top,
 .DMConversation-composer.u-bgUserColorLightest, .SidebarFilterModule, .modal-header, .block-dialog .submit-section, #global-tweet-dialog .modal-tweet .tweet,
-.DirectMessage-tweet .QuoteTweet, .ThreadedConversation-showMoreThreads, .DirectMessage-text
+.DirectMessage-tweet .QuoteTweet, .ThreadedConversation-showMoreThreads, .DirectMessage-text, .ThreadedConversation--header, .permalink .inline-reply-tweetbox-container,
+.DMInbox-tab, .DMInbox-secondaryInboxCopy
 {
     background: none !important;
 }
@@ -40,12 +41,13 @@ body.three-col, body.ProfilePage, .follow-button,
 .ProfileHeaderCard-birthdateText, .ProfileHeaderCard-joinDateText, .ProfileHeaderCard-locationText, .ProfileHeaderCard-onlineHoursText, .ProfileHeaderCard-responsivenessLevelText, .ProfileHeaderCard-vineProfileText,
 .ProfileHeading-toggleItem.is-active, .ProfileHeading-toggleItem.is-active:hover, .ProfileHeading-toggleItem.is-active:focus, .ProfileNav-item.is-active .ProfileNav-value, .ProfileNav-item.is-active:hover .ProfileNav-value,
 .DirectMessage--received .DirectMessage-text, .DirectMessage--sent .DirectMessage-text, .ProfileCard-bio, .hovercard.profile-card .bio-container, .UserActions-editButton, .modal-content, .message .message-text,
-.view-toggler .active, .error-page p, .modal-body p, .activity-popup-dialog-users, .t1-label, .t1-legend, .content-inner, .find-friends-list .source:not(:hover), #notifications-optout-all-top, .block-dialog .block-user-description
+.view-toggler .active, .error-page p, .modal-body p, .activity-popup-dialog-users, .t1-label, .t1-legend, .content-inner, .find-friends-list .source:not(:hover), #notifications-optout-all-top, .block-dialog .block-user-description,
+.ThreadedConversation--header
 {
     color: #CCC !important;
 }
-h2, h3, .wtf-module h3, .modal-table th, .fullname:not(:hover), .ProfileHeaderCard-name, .QuoteTweet-fullname, .ProfileNameTruncated, .DashboardProfileCard-name,
-.UserActions-editButton:hover, .error-page h1, .module .active .list-link:not(:hover), .DMTypeaheadHeader, .WtfLargeCarouselStreamItem-title
+h2, h3, .wtf-module h3, .modal-table th, .fullname, .ProfileHeaderCard-name, .QuoteTweet-fullname, .ProfileNameTruncated, .DashboardProfileCard-name, .UserActions-editButton:hover,
+.error-page h1, .module .active .list-link:not(:hover), .DMTypeaheadHeader, .WtfLargeCarouselStreamItem-title, .DMInbox-tabToggleItem.is-active .DMInbox-tabCopy
 {
     color: #FFF !important;
 }
@@ -68,7 +70,7 @@ h2, h3, .wtf-module h3, .modal-table th, .fullname:not(:hover), .ProfileHeaderCa
 }
 .tweet, .new-tweets-bar, .module .flex-module, .stream-item:not(.no-header-background-module), .timeline-tweet-box, .QuoteTweet:not(:hover), .TwitterCard-container, .ThreadedConversation, .ThreadedConversation-viewOther .view-other-link,
 .ProfileHeading-content, .WhoToFollow, .stream-end-item, .stream-end, .stream-loading, .stream-placeholder, .ProfileCard, .DashboardProfileCard, .MutedKeywordsFooter, .SidebarFilterModule,
-.content-header .header-inner, .content-no-header .no-header-inner, .content-header, .content-no-header, .PromptbirdPrompt, .Trends, .content-inner, .module .list-link
+.content-header .header-inner, .content-no-header .no-header-inner, .content-header, .content-no-header, .PromptbirdPrompt, .Trends, .content-inner, .module .list-link, .ThreadedConversation--header
 {
     border-color: rgba(255, 255, 255, .2) !important;
 }
@@ -84,7 +86,7 @@ h2, h3, .wtf-module h3, .modal-table th, .fullname:not(:hover), .ProfileHeaderCa
 }
 .DMInboxItem, .DMActivity-header, .DMDivider:before, .ProfileCard-bg, .DashboardProfileCard-bg, .ProfileClusterFollow, .permalink.has-replies .inline-reply-tweetbox, .stream-item-activity-notification, .ActivityItem,
 .modal-header, .NotificationsHeadingContent, .dropdown-divider, .app, .account, .find-friends-list li, #notifications-optout-all-top, .DMTokenizedMultiselectSuggestion.is-highlighted, .block-dialog .block-section,
-.ThreadedConversation-showMoreThreads
+.ThreadedConversation-showMoreThreads, .DMInbox-tab, .DMInbox-secondaryInboxCopy
 {
     border-bottom-color: rgba(255, 255, 255, .2) !important;
 }
