@@ -16,5 +16,7 @@ Just some random userscripts I wrote. (Tested only in Chrome with Tampermonkey.)
   Full dark style for Twitter.
 * `WhatsCrapp.user.js`  
   Hides annoying stuff on WhatsApp Web.
+* `Wire.user.js`  
+  **Not** a Tampermonkey script. Designed for the Electron-based Wire desktop client. Inject with `--remote-debugging-port` or something.
 
 Everything in this repo is public domain. Do whatever you want with it.
