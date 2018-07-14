@@ -55,6 +55,10 @@ pre
 {
     box-shadow: none !important;
 }
+.message
+{
+    margin-bottom: 6px !important;
+}
 .group-creation-modal-header
 {
     margin: 0 !important;
@@ -65,6 +69,9 @@ pre
     font-family: Menlo !important;
     font-size: 15px !important;
     line-height: 1.2em !important;
-    padding: 2px 3px !important;
+    margin: 5px 0 !important;
+    padding: 5px 8px !important;
+    border-radius: 5px !important;
+    border: solid 1px #000 !important;
 }
 `;
