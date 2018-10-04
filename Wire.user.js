@@ -1,3 +1,4 @@
+/* v1.1.0 */
 document.head.appendChild(document.createElement('style')).innerHTML = `
 .ctx-menu
 {
@@ -45,11 +46,15 @@ pre
 }
 .center-column svg, .right-column svg, .message-header-label-sender
 {
-    filter: invert(100%) hue-rotate(180deg) brightness(1.5) !important;
+    filter: invert(1) hue-rotate(180deg) saturate(10) !important;
 }
 .messages, .conversation-input-bar-text
 {
     max-width: none !important;
+}
+.conversation-input-bar-text
+{
+    caret-color: #FFF;
 }
 .right-column
 {
