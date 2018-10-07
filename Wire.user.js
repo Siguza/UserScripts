@@ -1,4 +1,4 @@
-/* v1.1.1 */
+/* v1.1.2 */
 document.head.appendChild(document.createElement('style')).innerHTML = `
 .ctx-menu
 {
@@ -64,6 +64,10 @@ pre
 {
     margin-bottom: 6px !important;
 }
+.iframe-container-video
+{
+    display: none !important;
+}
 .group-creation-modal-header
 {
     margin: 0 !important;
@@ -78,5 +82,9 @@ pre
     padding: 5px 8px !important;
     border-radius: 5px !important;
     border: solid 1px #000 !important;
+}
+pre > code
+{
+    filter: saturate(10) brightness(10) !important;
 }
 `;
