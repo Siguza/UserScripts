@@ -1,4 +1,4 @@
-/* v1.1.0 */
+/* v1.1.1 */
 document.head.appendChild(document.createElement('style')).innerHTML = `
 .ctx-menu
 {
@@ -48,7 +48,7 @@ pre
 {
     filter: invert(1) hue-rotate(180deg) saturate(10) !important;
 }
-.messages, .conversation-input-bar-text
+.messages, .conversation-input-bar-text, .shadow-input
 {
     max-width: none !important;
 }
