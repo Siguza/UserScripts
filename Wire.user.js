@@ -1,10 +1,10 @@
-/* v1.1.2 */
+/* v1.1.3 */
 document.head.appendChild(document.createElement('style')).innerHTML = `
 .ctx-menu
 {
     background: hsl(209.99997245147748, 6.249999814463081%, 7%) !important;
 }
-.right-column, .conversation-title-bar, .conversation-input-bar, .content-titlebar, .preferences-titlebar, .modal-header, .input
+.right-column, .conversation-title-bar, .conversation-input-bar__input, .content-titlebar, .preferences-titlebar, .modal-header, .input
 {
     background: hsl(209.99997245147748, 6.249999814463081%, 12%) !important;
 }
@@ -16,7 +16,7 @@ pre
 {
     background: hsl(209.99997245147748, 6.249999814463081%, 20%) !important;
 }
-.conversation-input-bar-editing
+.conversation-input-bar__input--editing
 {
     background: #666 !important;
 }
