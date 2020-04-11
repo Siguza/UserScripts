@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AppleSource+
 // @author       Siguza
-// @version      1.0.2
+// @version      1.0.3
 // @description  Improvements for opensource.apple.com
 // @namespace    siguza.applesource
 // @homepage     https://github.com/Siguza/UserScripts
@@ -32,7 +32,7 @@ ready(function()
         }
         return a.length - b.length;
     }
-    var r = location.pathname.split('/')[1] == 'tarballs' ? /^.*?-([0-9\.]+)\.tar\.gz$/ : /^.*?-([0-9\.]+)\/$/;
+    var r = location.pathname.split('/')[1] == 'tarballs' ? /^.*?-([0-9\.]+)\.tar\.gz$/ : /^.*?-([0-9\.]+)\/?$/;
     var t = document.querySelector('table');
     for(var i = 0; i < t.rows.length; ++i)
     {
