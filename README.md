@@ -10,6 +10,10 @@ Just some random userscripts/userstyles I wrote. Tested with Tampermonkey/Stylus
   Breaks [FuckAdBlock](https://github.com/sitexw/FuckAdBlock).
 * `Twitch-Unclutter-Chat-Icons.user.js`  
   Double-tap shift to show/hide chat message pin/reply icons on Twitch.
+* `YouTube-Grid.user.css`  
+  Restores the old grid on the YouTube subscriptions timeline.
+* `YouTube-Sharp-Edges.user.css`  
+  Removes the rounded edges from YouTube thumbnails.
 
 ### Deprecated
 

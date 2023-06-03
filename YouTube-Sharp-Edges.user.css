@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         YouTube Sharp Edges
+@author       Siguza
+@namespace    siguza.youtube-sharp-edges
+@version      1.0
+@description  Removes the rounded edges from YouTube thumbnails
+@homepageURL  https://github.com/Siguza/UserScripts
+==/UserStyle== */
+
+@-moz-document domain("www.youtube.com") {
+a.ytd-thumbnail, ytd-thumbnail::before
+{
+    border-radius: 0 !important;
+}
+}

@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name         YouTube Grid
+@author       Siguza
+@namespace    siguza.youtube-grid
+@version      1.0
+@description  Restores the old grid on the YouTube subscriptions timeline
+@homepageURL  https://github.com/Siguza/UserScripts
+==/UserStyle== */
+
+@-moz-document domain("www.youtube.com") {
+[page-subtype="subscriptions"] #contents.ytd-rich-grid-renderer
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px 6px;
+    max-width: 1500px;
+}
+[page-subtype="subscriptions"] ytd-rich-section-renderer, [page-subtype="subscriptions"] ytd-continuation-item-renderer
+{
+    grid-column: 1 / 7;
+}
+[page-subtype="subscriptions"] ytd-rich-grid-row, [page-subtype="subscriptions"] ytd-rich-grid-row #contents.ytd-rich-grid-row
+{
+    display: contents;
+}
+[page-subtype="subscriptions"] ytd-rich-item-renderer
+{
+    position: initial;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+}
