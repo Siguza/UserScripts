@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Twitch Unclutter Chat Icons
 // @author       Siguza
-// @version      1.0
+// @version      1.0.1
 // @description  Double-tap shift to show/hide chat message action icons
 // @namespace    siguza.twitch-unclutter-chaticons
 // @homepage     https://github.com/Siguza/UserScripts
 // @match        https://www.twitch.tv/*
-// @run-at       document-start
+// @run-at       document-body
 // @grant        none
 // ==/UserScript==
 
