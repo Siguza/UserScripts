@@ -2,13 +2,13 @@
 @name         YouTube Classic Red
 @author       Siguza
 @namespace    siguza.youtube-classic-red
-@version      1.0.1
+@version      1.0.2
 @description  Restores the progress bar back to unicolor red
 @homepageURL  https://github.com/Siguza/UserScripts
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com") {
-.ytp-cairo-refresh-signature-moments .ytp-play-progress, ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer
+.ytp-play-progress, #progress.ytd-thumbnail-overlay-resume-playback-renderer
 {
     background: #f03;
 }
