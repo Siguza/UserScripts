@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         YouTube No Endcards
+@author       Siguza
+@namespace    siguza.youtube-no-endcards
+@version      1.0.0
+@description  Algorithm be gone!
+@homepageURL  https://github.com/Siguza/UserScripts
+==/UserStyle== */
+
+@-moz-document domain("www.youtube.com") {
+.html5-video-player .ytp-fullscreen-grid
+{
+    display: none;
+}
+}
