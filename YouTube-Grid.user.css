@@ -2,7 +2,7 @@
 @name         YouTube Grid
 @author       Siguza
 @namespace    siguza.youtube-grid
-@version      1.1.1
+@version      1.1.2
 @description  Restores the old grid on the YouTube subscriptions timeline
 @homepageURL  https://github.com/Siguza/UserScripts
 ==/UserStyle== */
@@ -15,7 +15,7 @@
     grid-gap: 20px 6px;
     max-width: 1500px;
 }
-[page-subtype="subscriptions"] #contents > ytd-rich-section-renderer:nth-child(2)
+[page-subtype="subscriptions"] #contents > ytd-rich-section-renderer:nth-of-type(2)
 {
     display: none;
 }
